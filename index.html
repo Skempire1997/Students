@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Reg Form</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <h2 align="center">Student details</h2>
+            
+            <form >
+                
+                <table id="studentList" cellspacing="0px" cellpadding="5px">
+                    <thead>
+                        <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Actions</th>
+                        </tr>
+                    </thead>
+                  <tbody>
+            
+                  </tbody>
+            
+                </table>
+            
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Registration form</h1>
+                <br/>
+                
+                <input type="text" placeholder="Name" id="userName">
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Phone No" id="phone">
+               
+                
+                <button value="SUBMIT" onclick="enterData()">Submit</button>
+                <button type="reset" value="RESET" >Reset</button>
+                
+               
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h2>Welcome Students!</h2>
+                    <p>If your details not present in list then please fill the Registration form.</p>
+                    <button class="hidden" id="login">Register Now</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h2>Welcome Students !</h2>
+                    <p>Enter your personal details to enroll your name in list.</p>
+                    <button class="hidden" id="register">Check details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
